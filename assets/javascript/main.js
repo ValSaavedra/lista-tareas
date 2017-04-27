@@ -1,3 +1,13 @@
+
+function imprimirTarea(){
+	var input = document.getElementById("nuevatarea");
+	var ce = document.getElementsByClassName("cont-tarea");
+
+	ce[0].innerHTML += input.value;
+}
+
+
+
 var  tareas = [
   {
     "userId": 1,
