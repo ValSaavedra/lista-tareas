@@ -62,8 +62,9 @@ var  tareas = [
   ];
 
 
-var tareas = tareas.forEach(function(el){
-	document.write("<strong>" +"tarea : " +"</strong>" +"<i>" + el.title + "</i>" +"<br>" + "<br>");
-});
-document.write(tareas);
+var diezprimeros = document.getElementById("10primeros"); 
 
+var listaTareas = tareas.forEach(function(el){
+	diezprimeros.innerHTML +=  "<ul><li>" + "<strong>" +"Tarea : " +"</strong>"
+	 +"<i>" + el.title + "</i>" + " </li></ul>";
+});
